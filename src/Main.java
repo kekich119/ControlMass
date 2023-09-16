@@ -7,7 +7,7 @@ public class Main {
 
 
 
-            
+
             Scanner in = new Scanner(System.in);
             System.out.print("Enter first number: ");
             int NumF = in.nextInt();
