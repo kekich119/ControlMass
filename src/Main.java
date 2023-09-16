@@ -13,7 +13,7 @@ public class Main {
 
         }
         if (answer == 2){
-
+            umn();
         }
         if (answer == 3){
 
@@ -26,8 +26,6 @@ public class Main {
         Scanner in = new Scanner(System.in);
         int lenght = in.nextInt();
         int total = 0;
-        int NumF = 0;
-        int numS = 0;
         int score = 0;
         int array[] = new int[lenght];
         System.out.println("Напиши числа для массива");
@@ -51,6 +49,32 @@ public class Main {
         }
 
         System.out.println("\nСумма массива: " + total);
+    }
+
+    public static void umn(){           //Временно не работает((
+
+        System.out.println("Напиши из скольки чисел будет массив: ");
+        Scanner in = new Scanner(System.in);
+        int lenght = in.nextInt();
+        int mul = 0;
+        int score = 0;
+        int array[] = new int[lenght];
+        System.out.println("Напиши числа для массива");
+
+        for (int i = 0; i < lenght; i++) {
+
+            score = i;
+            System.out.print(score + ": ");
+            array[i] = in.nextInt();
+
+        }
+        for (int i = 0; i<=lenght; i++){
+            mul = mul * array[i];
+        }
+        System.out.println(" ");
+        System.out.println(mul);
+
+
     }
 
 }
